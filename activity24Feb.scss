@@ -61,7 +61,30 @@ header {
         margin-right: 5vw;
         text-align: center;
         
-        button {
+        #explore {
+            border: 1px solid transparent;
+            color: black;
+            background-color: orange;
+            padding: 10px;
+            border-radius: 10px;
+            font-weight: bold;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, .3);
+            font-family: 'Noto Sans', sans-serif;
+        }
+        
+        #explore:hover {
+            border: 1px solid transparent;
+            color: white;
+            background-color: darkslategray;
+            padding: 10px;
+            border-radius: 10px;
+            font-weight: bold;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, .3);
+            transition: .5s;
+            cursor: pointer;                
+        }
+
+        #learn {
             border: 1px solid transparent;
             color: black;
             background-color: transparent;
@@ -71,7 +94,7 @@ header {
             font-family: 'Noto Sans', sans-serif;
         }
         
-        button:hover {
+        #learn:hover {
             border: 1px solid transparent;
             color: white;
             background-color: orange;
@@ -173,8 +196,13 @@ footer {
 
     div {
         display: flex;
-        justify-content: space-evenly;
-        margin-bottom: vh;
+        justify-content: center;
+        margin-bottom: 1vh;
+
+        p {
+            margin-left: 5vh;
+            margin-right: 5vh;
+        }
     }
 
     div:hover {

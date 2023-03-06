@@ -56,7 +56,28 @@ header {
   margin-right: 5vw;
   text-align: center;
 }
-#hero div button {
+#hero div #explore {
+  border: 1px solid transparent;
+  color: black;
+  background-color: orange;
+  padding: 10px;
+  border-radius: 10px;
+  font-weight: bold;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  font-family: "Noto Sans", sans-serif;
+}
+#hero div #explore:hover {
+  border: 1px solid transparent;
+  color: white;
+  background-color: darkslategray;
+  padding: 10px;
+  border-radius: 10px;
+  font-weight: bold;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  transition: 0.5s;
+  cursor: pointer;
+}
+#hero div #learn {
   border: 1px solid transparent;
   color: black;
   background-color: transparent;
@@ -65,7 +86,7 @@ header {
   font-weight: bold;
   font-family: "Noto Sans", sans-serif;
 }
-#hero div button:hover {
+#hero div #learn:hover {
   border: 1px solid transparent;
   color: white;
   background-color: orange;
@@ -156,8 +177,12 @@ footer {
 }
 footer div {
   display: flex;
-  justify-content: space-evenly;
-  margin-bottom: vh;
+  justify-content: center;
+  margin-bottom: 1vh;
+}
+footer div p {
+  margin-left: 5vh;
+  margin-right: 5vh;
 }
 footer div:hover {
   cursor: pointer;
